@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+    Wiki simplificada
+    </title>
+<!-- definição de todos os tipos de texto(muito chique) -->
+	<style>
+		body {
+			background-color: #1a1a1a;
+			color: #f5f5f5;
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #222;
+			padding: 10px;
+
+        }
+        h1 {
+		font-size: 36px;
+		margin: 10px 0;
+	}
+	
+	main {
+		padding: 20px;
+	}
+	<!-- descobri que da pra criar um tipo variável que simboliza um tipo de texto-->
+	article {
+		margin-bottom: 20px;
+		text-align: justify;
+	}
+	
+	h2 {
+		font-size: 24px;
+		margin: 20px 0 10px;
+	}
+	
+	p {
+		line-height: 1.5;
+		margin-bottom: 15px;
+	}
+	
+	a {
+		color: #0099ff;
+		text-decoration: none;
+		border-bottom: 1px dotted #0099ff;
+	}
+	a:hover {
+		border-bottom: none;
+	}
+	li {
+		padding-bottom: 15px;
+		max-width: 2000px;
+	}
+	.vl {
+			border-right: 20px solid #1a1a1a;
+			height:fit-content;
+			border-left: 5px solid rgb(90, 90, 90)
+		  }
+	hr {
+		border-color: rgb(90, 90, 90);
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>
+            <a href="Wiki Simplificada.html" style="border-bottom: none;"><img src="https://www.senacrs.com.br/hotsite/psg/assets/img/senac_logo_branco.png" height="60" width="100" float="left"></a>
+			&nbsp;&nbsp;&nbsp;&nbsp;Wiki simplificada
+        </h1>
+	</header>
+	<main style="display: flex;">
+		<div style="flex-basis: 25%; text-align:left; font-size: small;">
+			<div class="vl" style="background-color: #222; padding: 10px;">	
+				<h2>Artigos</h2>
+				<ul>
+					<li><a href="Wiki Artigo 1.html">História da internet e do HTML</a></li>
+					<li><a href="Wiki Artigo 2.html">Funcionamento da internet</a></li>
+					<li><a href="Wiki Artigo 3.html">Etapas envolvidas no desenvolvimento de um site</a></li>
+					<li><a href="Wiki Artigo 4.html"">Ambientes de desenvolvimento</a></li>
+				</ul>
+			</div>
+			<div class="vl" style="margin-top: 20px; background-color: #222; padding: 10px;">
+				<h2>Quem somos nós?</h2>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/pedrobilhalva/" target="_blank">Pedro Bilhalva</a></li>
+					<li><a href="https://www.linkedin.com/in/debsscc/" target="_blank">Débora Carvalho</a></li>
+					<li><a href="https://www.linkedin.com/in/joão-vitor-dolinski-da-silva-330089269/" target="_blank">João Vitor Dolinski</a></li>
+				</ul>
+			</div>
+		</div>
+		<div style="flex-basis: 75%; ">
+			<article style="border: 10px solid #222; margin-bottom: 20px!important; 
+			background-color: #222 !important;">
+				<img src="historia2.png" width="100%;" height="5%;" style="margin-bottom: -10px;">
+				<h2>História da internet e do HTML</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;A internet surgiu nos anos 60, como parte de um projeto de Defesa dos EUA, que criou a Agência de Projetos de Pesquisa Avançada (ARPA), com o intuito de desenvolver tecnologias avançadas para fins militares...</p>
+				<p><a href="Wiki Artigo 1.html">Leia mais...</a></p>
+			</article>
+			<article style="border: 10px solid #222; margin-bottom: 20px!important; 
+			background-color: #222 !important;">
+				<img src="funcionamento.jpg" width="100%;" height="5%;" style="margin-bottom: -10px; margin-top: 10px;">
+				<h2>Funcionamento da internet</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;De início, vale citar que a internet mundialmente usada nos dias de hoje foi desenvolvida durante a Guerra Fria, impulsionada pela necessidade de comunicações mais seguras e rápidas, conforme apresentado no artigo anterior "A História da Internet"...</p>
+				<p><a href="Wiki Artigo 2.html">Leia mais...</a></p>
+			</article>
+			<article style="border: 10px solid #222; margin-bottom: 20px!important; 
+			background-color: #222 !important;">
+				<img src="etapas.png" width="100%;" height="5%;" style="margin-bottom: -10px; margin-top: 10px;">
+				<h2>Etapas envolvidas para desenvolvimento de um site completo</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Para a criação de um website, muitas coisas devem ser levadas em consideração, geralmente feitas através de etapas...</p>
+				<p><a href="Wiki Artigo 3.html">Leia mais...</a></p>
+			</article>
+			<article style="border: 10px solid #222; margin-bottom: 20px!important; 
+			background-color: #222 !important;">
+				<img src="ambientes2.png" width="100%;" height="5%;" style="margin-bottom: -10px; margin-top: 10px;">
+				<h2>Ambientes de desenvolvimento</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;Ambientes de desenvolvimento são ferramentas usadas por programadores para criar, testar e depurar softwares. Ambientes típicos geralmente incluem um editor de código, compilador ou interpretador, depurador e...</p>
+				<p><a href="Wiki Artigo 4.html">Leia mais...</a></p>
+			</article>
+		</div>
+	</main>
+</body>
+</html>
