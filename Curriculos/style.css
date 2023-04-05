@@ -56,6 +56,9 @@ hr {
     border-color: white;
 }
 div.relative {
-    position: relative;
+    position:relative;
     left: 30px;
+}
+table {
+    margin: 0 auto;
 }
