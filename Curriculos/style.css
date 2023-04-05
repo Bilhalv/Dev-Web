@@ -50,7 +50,7 @@ li {
 .vl {
     margin-right: 50px;
     height:fit-content;
-    border-left: 5px solid white
+    border: 5px solid white;
 }
 hr {
     border-color: white;
