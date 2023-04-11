@@ -21,6 +21,12 @@ main {
 
 article {
     margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 15px;
+    border:#909090;
+    max-width: 25%;
+    margin: 20px auto;
+    padding: 20px;
 }
 
 h2 {
@@ -50,10 +56,11 @@ li {
 .vl {
     margin-right: 50px;
     height:fit-content;
-    border: 5px solid white;
+    border: 5px solid #909090;
+    border-radius: 15px;
 }
 hr {
-    border-color: white;
+    border-color: #909090;
 }
 div.relative {
     position:relative;
@@ -61,4 +68,29 @@ div.relative {
 }
 table {
     margin: 0 auto;
+}
+button {
+  width: 50%;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+}
+button,
+select,
+textarea,
+input {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  border: #1a1a1a 1px solid;
+  border-radius: 5px;
+}
+button:hover,
+select:hover,
+textarea:hover,
+input:hover {
+  border-color: #909090;
+}
+select:hover {
+    cursor: pointer;
 }

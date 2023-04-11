@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Login Curriculum vitae 
+    </title>
+    <!---(Curriculo vitae atividade 2)-->
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        table {
+            width: 75%;
+        }
+        td {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header> <h1><a href="../Pedro.html" style="border-bottom: none;"><img src="https://www.senac.br/images/senac_logo_branco.png" height="60" width="100" float="left"></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;Login</h1></header>
+    <article>
+        <h2>
+            Lorem ipsum
+        </h2>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>
+                            Nome completo:
+                        </label>
+                    </td>
+                    <td>
+                        <input
+                        type="string"
+                        placeholder="Nome Completo"
+                        required
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Endereço:
+                        </label>
+                    </td>
+                    <td style="max-width: 100%;">
+                        <input
+                        type="string"
+                        placeholder="Nome da rua"
+                        required
+                        /><br>
+                        <select required>
+                            <option value="">Tipo</option>
+                            <option>Rua</option>
+                            <option>Avenida</option>
+                            <option>Praça</option>
+                            <option>Outro</option>
+                        </select>
+                        <input type="number" placeholder="Numero" required style="width: 50%;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Bairro:
+                        </label>
+                    </td>
+                    <td>
+                        <input
+                        type="string"
+                        placeholder="Bairro"
+                        required
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Cidade:
+                        </label>
+                    </td>
+                    <td>
+                        <input
+                        type="string"
+                        placeholder="Cidade"
+                        required
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Cep:
+                        </label>
+                    </td>
+                    <td>
+                        <input
+                        type="string"
+                        placeholder="000.000.000-00"
+                        required
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Telefone:
+                        </label>
+                    </td>
+                    <td>
+                        <input
+                        type="tel"
+                        placeholder="(53) 9 0000-0000"
+                        required
+                        pattern="[0-9]{2} 9 [0-9]{4}-[0-9]{4}"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            Assunto:
+                        </label>
+                    </td>
+                    <td>
+                        <textarea
+                        type="string"
+                        placeholder="Assunto"
+                        required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button onclick="processInput(event)">Criar Macro</button>
+                    </td>
+                </tr>
+            </table>
+            <script>
+                function processinput(event){
+                    event.preventDefault();
+                    alert("Seu formulário foi enviado!");
+                }
+            </script>
+        </form>
+</body>
+</html>
