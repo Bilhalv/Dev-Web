@@ -132,15 +132,40 @@
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center;">
-                        <button onclick="processInput(event)">Enviar Formulário</button>
+                        <button type="button" onclick="processInput(event)">Enviar Formulário</button>
                     </td>
                 </tr>
             </table>
             <script>
                 function processInput(event){
                     event.preventDefault();
-                    alert("Seu formulário foi enviado!");
+                    var inputs = document.getElementsByTagName('input');
+                    var textareas = document.getElementsByTagName('textarea');
+                    var filled = true;
+                    
+                    for(var i=0; i<inputs.length; i++){
+                        if(inputs[i].value == ''){
+                            filled = false;
+                            break;
+                        }
+                    }
+                    
+                    if(filled){
+                        for(var i=0; i<textareas.length; i++){
+                            if(textareas[i].value == ''){
+                                filled = false;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    if(filled){
+                        alert("Seu formulário foi enviado!");
+                    } else {
+                        alert("Por favor, preencha todos os campos.");
+                    }
                 }
+
             </script>
         </form>
     </article>
