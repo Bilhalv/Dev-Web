@@ -95,16 +95,6 @@ input:hover {
 select:hover {
     cursor: pointer;
 }
-/* For desktop screens */
-@media (min-width: 601px) {
-  .card {
-    width: 25%;
-  }
-}
-  
-/* For mobile screens */
-@media (max-width: 600px) {
-  .card {
-    width: 50%;
-  }
+.card {
+    width: 500px;
 }
